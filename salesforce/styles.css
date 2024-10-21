@@ -1,0 +1,267 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: white;
+    color: rgba(255, 255, 255, 0.616);
+    padding: 10px 15px;
+    color: rgb(10, 49, 190);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+
+nav {
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+   
+    
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+   
+}
+
+.nav-links li {
+    margin-left: 20px;
+    color: blue;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+    color:black ;
+}
+
+
+
+.hero {
+    background: url('your-image-url.jpg') no-repeat center center/cover; /* Use your desired hero image */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  
+    
+
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.statement-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;
+    /* width: 80%; */
+    /* max-width: 1200px; */
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex; /* Ensures space between cards */
+    gap: 20px; /* Adds space between cards */
+    /* padding: 20px; */
+}
+
+.card {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);/* Adjusts based on screen size */
+    /* min-width: 250px; Ensures cards don't get too small on small screens */
+    /* max-width: 100%; Keeps cards from overflowing */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 20px; /* Adds space below each card */
+}
+
+.card img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: contain;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #003366;
+    padding: 15px;
+}
+
+.card p {
+    font-size: 14px;
+    padding: 0 15px 15px;
+    color: #555;
+    flex-grow: 1; /* Ensures that the text fills available space */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    color: #007BFF;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+    transition: all 0.3s ease;
+    float: right;
+}
+
+.button:hover {
+    color: gray;
+    transform: scale(1.1); /* Smooth scaling effect */
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+
+
+
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.hero-section {
+    background-image: url(/standard-quality-control-collage-concept_23-2149595847.jpg); /* Replace with your background image URL */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    color: white;
+    text-align: center;
+    padding: 0px 0px; /* Decreased padding for top and bottom */
+    min-height: 500px; /* Set a lower minimum height */
+    position: relative; /* Enable absolute positioning for child elements */
+    border-radius: 0; /* Remove any border radius for hero section */
+    margin-top: px; /* Adjust the value to increase or decrease the gap */
+}
+
+
+
+
+.hero-content {
+    position: relative; /* Position relative for absolute child elements */
+    z-index: 1; /* Ensure the content is above the background */
+    padding: 150px 20px; /* Increased padding for top and bottom */
+    min-height: 700px; /* Set a minimum height */
+    border-radius: 0; /* Remove any border radius for hero section */
+
+}
+
+.hero-section h1 {
+    font-size: 48px; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.hero-section p {
+    font-size: 20px; /* Font size for the paragraph */
+    max-width: 800px; /* Maximum width for readability */
+    margin: 0 auto; /* Center the paragraph */
+}
+.statement-container {
+    text-align: center;
+    margin: 50px 0; /* Margin above and below */
+}
+
+.statement-container h2 {
+    font-size: 36px; /* Heading font size for services section */
+    color: #0070d2; /* Color for emphasis */
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-align: center;
+}
+
+.card h3 {
+    color: #0070d2;
+}
+
+.button {
+    font-size: 24px;
+    color: #007BFF;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.button:hover {
+    color: #0056b3;
+}
+
+.hidden-text {
+    display: none;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+.about-container {
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0)
+  }
+  about{}

@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+ }
+
+ .contact-header{
+    width: 100%;
+ }
+
+
+.form-container {
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(42, 159, 10, 0.1);
+    width: 100%;
+  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+   
+ }
+
+
+/* Flexbox Layout */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.col {
+    flex: 1;
+}
+
+/* Label and Input Styles */
+label {
+    margin: 12px 0 6px;
+    font-weight: bold;
+
+    align-items: /* Centers checkbox vertically */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button Style */
+button {
+    background-color: #2c8fed;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #246fcf;
+}
+
+/* Additional Elements */
+.checkbox-container {
+    margin-bottom: 15px;
+}
+
+.captcha {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.captcha p {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Link Styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+

@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+nav {
+ 
+    display: flex;
+    justify-content: space-between;
+    top: 0%;
+    align-items: center;
+ 
+    position: sticky;
+    /* top: 0; */
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: #0056b3;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+  color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+
+
+/* Hero Section */
+#about {
+    padding-top: 120px;
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-container h1 {
+    color: #0056b3;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-container h2 {
+    color: #003d80;
+    font-size: 2em;
+    margin: 30px 0 15px;
+}
+
+.about-container p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container h1 {
+        font-size: 2em;
+    }
+
+    .about-container h2 {
+        font-size: 1.5em;
+    }
+
+    .about-container p {
+        font-size: 1.1em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.hero-section {
+    background-image: url(/SAQ.jpg); /* Replace with your background image URL */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    color: white;
+    text-align: center;
+    padding: 0px 0px; /* Decreased padding for top and bottom */
+    min-height: 500px; /* Set a lower minimum height */
+    position: relative; /* Enable absolute positioning for child elements */
+    border-radius: 0; /* Remove any border radius for hero section */
+    
+}
+
+
+
+
+.hero-content {
+    position: relative; /* Position relative for absolute child elements */
+    z-index: 1; /* Ensure the content is above the background */
+    padding: 150px 20px; /* Increased padding for top and bottom */
+    min-height: 700px; /* Set a minimum height */
+    border-radius: 0; /* Remove any border radius for hero section */
+
+}
+
+.hero-section h1 {
+    font-size: 48px; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.hero-section p {
+    font-size: 20px; /* Font size for the paragraph */
+    max-width: 800px; /* Maximum width for readability */
+    margin: 0 auto; /* Center the paragraph */
+}
